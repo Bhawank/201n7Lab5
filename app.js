@@ -40,7 +40,7 @@ testMultiply(5,9);
 // Fourth element: "The product of 4 and 7 and 5 is 140."
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 //
-// // // Write your code here
+// // // Write your code herejjjjj
 function sumAndMultiply(){
   var q3 = new Array();
   q3 [0] = 4+7+5;
