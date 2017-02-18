@@ -1,257 +1,129 @@
-//
+/////////////////////////////////////
+/* Problem 1 (this is your demo)
+Write a function called sum() that takes in two numbers as arguments and then returns an array where the first element is the sum of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+"The sum of 4 and 7 is 11."
+Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
-var userName = prompt('what\'s your name?');
-alert ('Hello ' + userName + '. Thanks for coming to my site!');
-
-function question1(){
-  var questionOne = prompt('Was I born in India?').toUpperCase();
-  console.log(questionOne)
-  if (questionOne === 'YES' || questionOne === 'Y'){
-    alert('Correct!');
-  }else{
-    alert('Wrong!');
-  }
+// Write your code here
+function sum(){
+  var q1 = new Array();
+  q1 [0] = 4+7;
+  q1 [1] = "The sum of 4 and 7 is 11.";
+  return q1;
 }
-question1()
-
-
-console.log('Answer 1)Yes, India');
-
-
-function question2 () {
-  var questionTwo = prompt('Is my fav color blue?').toUpperCase();
-  if (questionTwo === 'YES' || questionTwo === 'Y'){
-    alert('Correct!');
-  }else
-  {
-    alert('Wrong!');
-  }
+// Here is the test for sum(); uncomment it to run it
+testSum(4,7);
+// // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
+//
+// /////////////////////////////////////
+// /* Problem 2
+// Write a function called multiply() that takes in two numbers as arguments and returns an array where the first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+// "The product of 4 and 7 is 28."
+// Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
+// //
+// // // Write your code here
+function multiply(){
+  var q2 = new Array();
+  q2 [0] = 5*9;
+  q2 [1] = "The product of 5 and 9 is 45.";
+  return q2;
 }
-question2()
+// // Here is the test for multiply(); uncomment it to run it
+testMultiply(5,9);
 
-console.log('Answer 2)Yes, blue');
-
-function question3 () {
-  var questionThree = prompt('do I like Apple products?').toUpperCase();
-  if (questionThree === 'YES' || questionThree === 'Y'){
-    alert('Correct!');
-  }else{
-    alert('Wrong!');
-  }
+// // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
+//
+// /////////////////////////////////////
+// /* Problem 3
+// Write a function called sumAndMultiply() that takes in three numbers as arguments and returns an array where the first element is the sum of those three numbers, the second element is the product of those three numbers,  and the third and fourth elements are strings that EXACTLY follow this example and use the values that were input into the function:
+// Third element: "4 and 7 and 5 sum to 16."
+// Fourth element: "The product of 4 and 7 and 5 is 140."
+// Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
+//
+// // // Write your code here
+function sumAndMultiply(){
+  var q3 = new Array();
+  q3 [0] = 4+7+5;
+  q3 [1] = 4*7*5;
+  q3 [2] = '4 and 7 and 5 sum to 16.';
+  q3 [3] = "The product of 4 and 7 and 5 is 140.";
+  return q3;
 }
-question3()
-
-console.log('Answer 3)Yes, I do like Apple products')
-
-
- function question4() {
-var questionFour = prompt('do I have hobbies?').toUpperCase();
-if (questionFour === 'YES' || questionFour === 'Y'){
-  alert('Correct!');
-}else{
-  alert('Wrong!')
+// // Here is the test for sumAndMultiply(); uncomment it to run it
+testSumAndMultiply(4,7,5);
+//
+// // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. don't forget to create a new branch for your work on the next question!
+//
+// /////////////////////////////////////
+// /* Problem 4
+// Write a function called sumArray() that takes in an array of numbers as its argument and then returns an array where the first element is the sum of the numbers in the array, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+// "2,3,4 was passed in as an array of numbers, and 9 is their sum."
+// Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
+function sumArray(){
+  testArray [1] = "2,3,4 was passed in as an array of numbers, and 9 is their sum.";
+  return testArray;
 }
+// // Write your code here
+testArray = [2,3,4];
+testSumArray(testArray);
+//
+// // Here is the test for sumArray(); uncomment it to run it
+// testSumArray(testArray);
+//
+// // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
+//
+// /////////////////////////////////////
+// /* Problem 5
+// Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+// "The numbers 2,3,4 have a product of 24."
+// Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
+//
+// // // Write your code here
+function multiplyArray(){
+  testArray [1] = "The numbers 2,3,4 have a product of 24.";
+  return testArray;
 }
-question4()
-
-console.log('Answer 4)Yes');
-
-//end of 4 question and answers
- function question5 () {
-var questionFive = prompt('Is my hobbie, A) Collecting car\'s?, B) Collecting watche\'s? , or C) Collecting Jordan\'s? ');
-
-if (questionFive === 'B' || questionFive === 'Collecting watche\'s' || questionFive === 'B) Collecting watche\'s' || questionFive === 'B)' || questionFive === 'b') {
-  alert('Yes, I do collect watche\'s!');
-} else if (questionFive === 'C' || questionFive === 'Collecting Jordan\'s' || questionFive === 'C) Collecting Jordan\'s') {
-  alert('Sorry, I hate Jordan\'s');
-}else{
-  alert('no not yet, but I hope to in the future');
+testMultiplyArray(testArray);
+//
+//...........
+// ////
+//
+// //
+function testSum() {
+ if (sum(4,7)[1] === 'The sum of 4 and 7 is 11.') {
+   console.log('%c TEST FOR sum() PASSES', 'color: green');
+ } else {
+   console.log('%c TEST FOR sum() FAILS', 'color: red');
+ }
 }
+// //
+function testMultiply() {
+ if (multiply(5,9)[1] === 'The product of 5 and 9 is 45.') {
+   console.log('%c TEST FOR multiply() PASSES', 'color: green');
+ } else {
+   console.log('%c TEST FOR multiply() FAILS', 'color: red');
+ }
 }
-question5()
-console.log('answer B) Collecting watche\'s');
-
- function question6 () {
-var counterSix = 0;
-var answerSix = 5;
-//create a while loop that allows user 4 tries to get answer6
-while (counterSix < 4) {
-  counterSix++;
-  var questionSix = parseInt(prompt('how many watche\'s are in my collection?'));
-  if (counterSix === 4) {
-  alert ("too many guess'\s");
-  }
-  else if (answerSix === questionSix) {
-    console.log(answerSix === questionSix);
-    alert ("correct!");
-    break;
-  }
-  else if (questionSix < answerSix) {
-    alert("too low");
-  }
-  else if (questionSix > answerSix) {
-      alert("too high");
-  }
+// //
+function testSumAndMultiply() {
+ if (sumAndMultiply(4, 7, 5)[2] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
+   console.log('%c TEST FOR sumAndMultiply() PASSES', 'color: green');
+ } else {
+   console.log('%c TEST FOR sumAndMultiply() FAILS', 'color: red');
+ }
 }
+//
+function testSumArray() {
+ if (sumArray(testArray)[1] === '2,3,4 was passed in as an array of numbers, and 9 is their sum.') {
+   console.log('%c TEST FOR sumArray() PASSES', 'color: green');
+ } else {
+   console.log('%c TEST FOR sumArray() FAILS', 'color: red');
+ }
 }
-question6()
-
- function question7 () {
-counterSven = 0;
-
-
-//create Array for questionSven
-var arSven = new Array('seatac','kent');
-//create while loop
-while(counterSven < 6){
-  counterSven++;
-  var userQuestion = prompt("Guess cities that I have lived in WA state");
-
-  if (arSven.indexOf(userQuestion) !== -1){
-    //console.log(arSven === userQuestion);
-    alert("correct");
-
-    break;
-  }
-  else if (arSven.indexOf(userQuestion) === -1) {
-  alert("not correct");
-  }
-  else if (counterSven === 6) {
-    alert("too many guess'\s");
-  }
+function testMultiplyArray() {
+ if (multiplyArray(testArray)[1] === 'The numbers 2,3,4 have a product of 24.') {
+   console.log('%c TEST FOR multiplyArray() PASSES', 'color: green');
+ } else {
+   console.log('%c TEST FOR multiplyArray() FAILS', 'color: red');
+ }
 }
- alert("seatac, kent I have lived");
-}
-question7()//
-
-// var userName = prompt('what\'s your name?');
-// alert ('Hello ' + userName + '. Thanks for coming to my site!');
-//
-// function question1(){
-//   var questionOne = prompt('Was I born in India?').toUpperCase();
-//   console.log(questionOne)
-//   if (questionOne === 'YES' || questionOne === 'Y'){
-//     alert('Correct!');
-//   }else{
-//     alert('Wrong!');
-//   }
-// }
-// question1()
-//
-//
-// console.log('Answer 1)Yes, India');
-//
-//
-// function question2 () {
-//   var questionTwo = prompt('Is my fav color blue?').toUpperCase();
-//   if (questionTwo === 'YES' || questionTwo === 'Y'){
-//     alert('Correct!');
-//   }else
-//   {
-//     alert('Wrong!');
-//   }
-// }
-// question2()
-//
-// console.log('Answer 2)Yes, blue');
-//
-// function question3 () {
-//   var questionThree = prompt('do I like Apple products?').toUpperCase();
-//   if (questionThree === 'YES' || questionThree === 'Y'){
-//     alert('Correct!');
-//   }else{
-//     alert('Wrong!');
-//   }
-// }
-// question3()
-//
-// console.log('Answer 3)Yes, I do like Apple products')
-//
-//
-//  function question4() {
-// var questionFour = prompt('do I have hobbies?').toUpperCase();
-// if (questionFour === 'YES' || questionFour === 'Y'){
-//   alert('Correct!');
-// }else{
-//   alert('Wrong!')
-// }
-// }
-// question4()
-//
-// console.log('Answer 4)Yes');
-//
-// //end of 4 question and answers
-//
-//
-//
-//
-//
-//  function question5 () {
-// var questionFive = prompt('Is my hobbie, A) Collecting car\'s?, B) Collecting watche\'s? , or C) Collecting Jordan\'s? ');
-//
-// if (questionFive === 'B' || questionFive === 'Collecting watche\'s' || questionFive === 'B) Collecting watche\'s' || questionFive === 'B)' || questionFive === 'b') {
-//   alert('Yes, I do collect watche\'s!');
-// } else if (questionFive === 'C' || questionFive === 'Collecting Jordan\'s' || questionFive === 'C) Collecting Jordan\'s') {
-//   alert('Sorry, I hate Jordan\'s');
-// }else{
-//   alert('no not yet, but I hope to in the future');
-// }
-// }
-// question5()
-//
-// console.log('answer B) Collecting watche\'s');
-//
-//
-//
-//  function question6 () {
-// var counterSix = 0;
-// var answerSix = 5;
-// //create a while loop that allows user 4 tries to get answer6
-// while (counterSix < 4) {
-//   counterSix++;
-//   var questionSix = parseInt(prompt('how many watche\'s are in my collection?'));
-//   if (counterSix === 4) {
-//   alert ("too many guess'\s");
-//   }
-//   else if (answerSix === questionSix) {
-//     console.log(answerSix === questionSix);
-//     alert ("correct!");
-//     break;
-//   }
-//   else if (questionSix < answerSix) {
-//     alert("too low");
-//   }
-//   else if (questionSix > answerSix) {
-//       alert("too high");
-//   }
-// }
-// }
-// question6()
-//
-//  function question7 () {
-// counterSven = 0;
-//
-//
-// //create Array for questionSven
-// var arSven = new Array('seatac','kent');
-// //create while loop
-// while(counterSven < 6){
-//   counterSven++;
-//   var userQuestion = prompt("Guess cities that I have lived in WA state");
-//
-//   if (arSven.indexOf(userQuestion) !== -1){
-//     //console.log(arSven === userQuestion);
-//     alert("correct");
-//
-//     break;
-//   }
-//   else if (arSven.indexOf(userQuestion) === -1) {
-//   alert("not correct");
-//   }
-//   else if (counterSven === 6) {
-//     alert("too many guess'\s");
-//   }
-// }
-//  alert("seatac, kent I have lived");
-// }
-// question7()
